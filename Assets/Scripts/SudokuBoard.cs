@@ -1,19 +1,21 @@
 using UnityEngine;
 
-struct position
-{
-	int x;
-	int y;
-}
 public class SudokuBoard : MonoBehaviour
 {
+	public int boardSize = 9;
+	private GameManager gm;
+	public float fallSpeed;
 
-	// Start is called once before the first execution of Update after the MonoBehaviour is created
-	void Start() {
+	[SerializeField] Camera mainCamera;
+
+	void Start()
+	{
+		gm = GameManager.instance;
+		fallSpeed = gm.fallSpeed;
 	}
 
-	// Update is called once per frame
-	void Update()
+	public void SetBoardSize(int newSize)
 	{
+		boardSize = newSize;
 	}
 }
