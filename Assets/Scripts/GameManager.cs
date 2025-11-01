@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
 	public float fallSpeed = 1f;
 
 	public Sprite[] blockTextures;
+	public string[] blockLabels;
 
 	private void Awake()
 	{

@@ -1,0 +1,624 @@
+fileFormatVersion: 2
+guid: 65bb89e0f52ea6e40ad21bafa640d553
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3616067984742220011
+    second: solstrand-publishing_0
+  - first:
+      213: -1825086245966324827
+    second: solstrand-publishing_1
+  - first:
+      213: -7574536552578875551
+    second: solstrand-publishing_2
+  - first:
+      213: 6447640485093495828
+    second: solstrand-publishing_3
+  - first:
+      213: 4273633601631768492
+    second: solstrand-publishing_4
+  - first:
+      213: -8359890052163628468
+    second: solstrand-publishing_5
+  - first:
+      213: 6821635659571174842
+    second: solstrand-publishing_6
+  - first:
+      213: -7754050390722616651
+    second: solstrand-publishing_7
+  - first:
+      213: 6484347724544440630
+    second: solstrand-publishing_8
+  - first:
+      213: -1941560051685010738
+    second: solstrand-publishing_9
+  - first:
+      213: 2430421530337162089
+    second: solstrand-publishing_10
+  - first:
+      213: -4844413162533352708
+    second: solstrand-publishing_11
+  - first:
+      213: 6942566704575613109
+    second: solstrand-publishing_12
+  - first:
+      213: 7034406515551573142
+    second: solstrand-publishing_13
+  - first:
+      213: 5754850597213435296
+    second: solstrand-publishing_14
+  - first:
+      213: 2616760931062445103
+    second: solstrand-publishing_15
+  - first:
+      213: -8431642167310261653
+    second: solstrand-publishing_16
+  - first:
+      213: 2631022457637259838
+    second: solstrand-publishing_17
+  - first:
+      213: -4520294425099986231
+    second: solstrand-publishing_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: solstrand-publishing_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 16
+        width: 42
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51ff6cd935521ddc0800000000000000
+      internalID: -3616067984742220011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solstrand-publishing_1
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 16
+        width: 42
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5abd9b0aabdfba6e0800000000000000
+      internalID: -1825086245966324827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solstrand-publishing_2
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 17
+        width: 30
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16ff2551327d1e690800000000000000
+      internalID: -7574536552578875551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solstrand-publishing_3
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 16
+        width: 42
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 414dc613cde9a7950800000000000000
+      internalID: 6447640485093495828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solstrand-publishing_4
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 17
+        width: 40
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: caf4f653e1ffe4b30800000000000000
+      internalID: 4273633601631768492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solstrand-publishing_5
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 17
+        width: 40
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4217774a44bbfb80800000000000000
+      internalID: -8359890052163628468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solstrand-publishing_6
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 17
+        width: 46
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abd90e36d715bae50800000000000000
+      internalID: 6821635659571174842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solstrand-publishing_7
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 17
+        width: 40
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b2ef7a9044146490800000000000000
+      internalID: -7754050390722616651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solstrand-publishing_8
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 17
+        width: 42
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 639759166e70df950800000000000000
+      internalID: 6484347724544440630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solstrand-publishing_9
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 17
+        width: 39
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec2d9397b613e05e0800000000000000
+      internalID: -1941560051685010738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solstrand-publishing_10
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 16
+        width: 41
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 963353241879ab120800000000000000
+      internalID: 2430421530337162089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solstrand-publishing_11
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 17
+        width: 42
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfa09fd35ef25ccb0800000000000000
+      internalID: -4844413162533352708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solstrand-publishing_12
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 17
+        width: 30
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b80faf62a3f85060800000000000000
+      internalID: 6942566704575613109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solstrand-publishing_13
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 17
+        width: 20
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 694152db47b3f9160800000000000000
+      internalID: 7034406515551573142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solstrand-publishing_14
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 16
+        width: 42
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a5f95ea0265ddf40800000000000000
+      internalID: 5754850597213435296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solstrand-publishing_15
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 17
+        width: 42
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f24f81ed33a905420800000000000000
+      internalID: 2616760931062445103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solstrand-publishing_16
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 17
+        width: 20
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6264402f1accfa80800000000000000
+      internalID: -8431642167310261653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solstrand-publishing_17
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 17
+        width: 40
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3a4b874cf4438420800000000000000
+      internalID: 2631022457637259838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solstrand-publishing_18
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 16
+        width: 43
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ca9cbf7b20b441c0800000000000000
+      internalID: -4520294425099986231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      solstrand-publishing_0: -3616067984742220011
+      solstrand-publishing_1: -1825086245966324827
+      solstrand-publishing_10: 2430421530337162089
+      solstrand-publishing_11: -4844413162533352708
+      solstrand-publishing_12: 6942566704575613109
+      solstrand-publishing_13: 7034406515551573142
+      solstrand-publishing_14: 5754850597213435296
+      solstrand-publishing_15: 2616760931062445103
+      solstrand-publishing_16: -8431642167310261653
+      solstrand-publishing_17: 2631022457637259838
+      solstrand-publishing_18: -4520294425099986231
+      solstrand-publishing_2: -7574536552578875551
+      solstrand-publishing_3: 6447640485093495828
+      solstrand-publishing_4: 4273633601631768492
+      solstrand-publishing_5: -8359890052163628468
+      solstrand-publishing_6: 6821635659571174842
+      solstrand-publishing_7: -7754050390722616651
+      solstrand-publishing_8: 6484347724544440630
+      solstrand-publishing_9: -1941560051685010738
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

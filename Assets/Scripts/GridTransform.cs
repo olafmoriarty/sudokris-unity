@@ -8,8 +8,19 @@ public class GridTransform : MonoBehaviour
 	public float horizontalMoveSpeed = 12f;
 
 	// Update is called once per frame
-	void Update() {
+	void Update()
+	{
 		position = new Vector2(x, y);
-		transform.position = Vector2.MoveTowards(transform.position, position, horizontalMoveSpeed * Time.deltaTime );
-    }
+		transform.localPosition = Vector2.MoveTowards(transform.localPosition, position, horizontalMoveSpeed * Time.deltaTime);
+	}
+	
+	public void SetPosition( int newX, int newY, bool instant = false )
+	{
+		x = newX;
+		y = newY;
+		if ( instant )
+		{
+			transform.localPosition = new Vector2( newX, newY );
+		}
+	}
 }

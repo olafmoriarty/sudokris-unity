@@ -18,6 +18,13 @@ public class FallingPiece : MonoBehaviour
 	public float moveSpeed = 1f;
 	private float timeSinceLastBlockFell;
 
+	private BlockStruct[] shape = new BlockStruct[]
+	{
+		new BlockStruct( 0, 0, 0 ),
+		new BlockStruct( 1, 0, 1 ),
+		new BlockStruct( -1, 0, 2) ,
+	};
+
 	// Start is called once before the first execution of Update after the MonoBehaviour is created
 	void Start()
 	{
@@ -40,9 +47,19 @@ public class FallingPiece : MonoBehaviour
 		}
 
 		timeSinceLastBlockFell += Time.deltaTime;
-		if (timeSinceLastBlockFell >= board.fallSpeed && gridTransform.y > 0)
+		if (timeSinceLastBlockFell >= board.fallSpeed)
 		{
-			gridTransform.y -= 1;
+			if (!Blockf.DoBlocksCollide(Blockf.MoveBlocks(shape, gridTransform.x, gridTransform.y - 1), board.blocksOnBoard, board.boardSize))
+			{
+				gridTransform.y -= 1;
+			}
+			else
+			{
+				// Move blocks to blocksOnBoard
+
+				// Create new piece
+				CreatePiece();
+			}
 			timeSinceLastBlockFell = 0f;
 		}
 
@@ -52,8 +69,7 @@ public class FallingPiece : MonoBehaviour
 			timeSincePreviousHorizontalMove = 0f;
 			previousMoveValue = moveValue.x;
 			// Will be replaced with an actual "does position collide" checker, but for now:
-			int newX = gridTransform.x + (int)moveValue.x;
-			if (newX >= 0 && newX < board.boardSize)
+			if ( !Blockf.DoBlocksCollide( Blockf.MoveBlocks( shape, gridTransform.x + (int)moveValue.x, gridTransform.y ), board.blocksOnBoard, board.boardSize ) )
 			{
 				gridTransform.x += (int)moveValue.x;
 			}
@@ -62,29 +78,21 @@ public class FallingPiece : MonoBehaviour
 
 	void CreatePiece()
 	{
-		// TODO Tidy up already existing piece
+		gridTransform.SetPosition( (int)Mathf.Floor(board.boardSize / 2), board.boardSize + 5, true );
+		foreach (Transform child in transform)
+		{
+			Destroy(child.gameObject);
+		}
 
-		GameObject newBlock;
-		newBlock = Instantiate(block);
-		newBlock.transform.parent = transform;
-		newBlock.transform.localScale = new Vector3(1f, 1f, 1f);
-		newBlock.transform.localPosition = new Vector3(1f, 0, 0);
-
-		GameObject newBlock2;
-		newBlock2 = Instantiate(block);
-		newBlock2.transform.parent = transform;
-		newBlock2.transform.localScale = new Vector3(1f, 1f, 1f);
-		newBlock2.transform.localPosition = new Vector3(0, 0, 0);
-
-		GameObject newBlock3;
-		newBlock3 = Instantiate(block);
-		newBlock3.transform.parent = transform;
-		newBlock3.transform.localScale = new Vector3(1f, 1f, 1f);
-		newBlock3.transform.localPosition = new Vector3(0, 1f, 0);
-
-		GameObject gm = GameObject.Find("GameManager");
-		newBlock.GetComponent<SpriteRenderer>().sprite = gm.GetComponent<GameManager>().blockTextures[2];
-
+		foreach (BlockStruct part in shape)
+		{
+			GameObject newBlock;
+			newBlock = Instantiate(block);
+			newBlock.transform.parent = transform;
+			newBlock.transform.localScale = new Vector3(1f, 1f, 1f);
+			newBlock.transform.localPosition = new Vector3(part.x, part.y, 0);
+			newBlock.GetComponent<Block>().SetValue(part.value);
+		}
 	}
 
 

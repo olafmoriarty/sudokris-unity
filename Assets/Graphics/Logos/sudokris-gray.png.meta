@@ -1,0 +1,494 @@
+fileFormatVersion: 2
+guid: 6c193957bc380bb4a81fe57cb9df21a6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1422651115365044638
+    second: sudokris-gray_0
+  - first:
+      213: 2724108383486582379
+    second: sudokris-gray_1
+  - first:
+      213: -7281240399014240011
+    second: sudokris-gray_2
+  - first:
+      213: -1696734667029176552
+    second: sudokris-gray_3
+  - first:
+      213: -3325905812436079522
+    second: sudokris-gray_4
+  - first:
+      213: 5798871245439209497
+    second: sudokris-gray_5
+  - first:
+      213: -2888626753829598192
+    second: sudokris-gray_6
+  - first:
+      213: -1010590708372575452
+    second: sudokris-gray_7
+  - first:
+      213: 2240405265377599756
+    second: sudokris-gray_8
+  - first:
+      213: 1897466234626417881
+    second: sudokris-gray_9
+  - first:
+      213: 137652096940670861
+    second: sudokris-gray_10
+  - first:
+      213: 1729650640584580967
+    second: sudokris-gray_11
+  - first:
+      213: -8815238201828156371
+    second: sudokris-gray_12
+  - first:
+      213: 5949824392108351917
+    second: sudokris-gray_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sudokris-gray_0
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 18
+        width: 134
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9195a2e6a54eb310800000000000000
+      internalID: 1422651115365044638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sudokris-gray_1
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 18
+        width: 153
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6e916f442afdc520800000000000000
+      internalID: 2724108383486582379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sudokris-gray_2
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 18
+        width: 151
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f0688c4f66d3fa90800000000000000
+      internalID: -7281240399014240011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sudokris-gray_3
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 18
+        width: 52
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81f92ad5fccf378e0800000000000000
+      internalID: -1696734667029176552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sudokris-gray_4
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 213
+        width: 46
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5c2755f84208d1d0800000000000000
+      internalID: -3325905812436079522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sudokris-gray_5
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 213
+        width: 50
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91091aa8caab97050800000000000000
+      internalID: 5798871245439209497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sudokris-gray_6
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 18
+        width: 161
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01c0c41a54989e7d0800000000000000
+      internalID: -2888626753829598192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sudokris-gray_7
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 18
+        width: 157
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42b6426ea19a9f1f0800000000000000
+      internalID: -1010590708372575452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sudokris-gray_8
+      rect:
+        serializedVersion: 2
+        x: 1051
+        y: 18
+        width: 61
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c012fbbf7b4871f10800000000000000
+      internalID: 2240405265377599756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sudokris-gray_9
+      rect:
+        serializedVersion: 2
+        x: 1133
+        y: 18
+        width: 134
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d4a438bc77255a10800000000000000
+      internalID: 1897466234626417881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sudokris-gray_10
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 116
+        width: 46
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8f7cb45ad909e100800000000000000
+      internalID: 137652096940670861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sudokris-gray_11
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 116
+        width: 50
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76f1291f714f00810800000000000000
+      internalID: 1729650640584580967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sudokris-gray_12
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 18
+        width: 46
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2c54918f8bf9a580800000000000000
+      internalID: -8815238201828156371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sudokris-gray_13
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 18
+        width: 50
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da1a297d2c5029250800000000000000
+      internalID: 5949824392108351917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      sudokris-gray_0: 1422651115365044638
+      sudokris-gray_1: 2724108383486582379
+      sudokris-gray_10: 137652096940670861
+      sudokris-gray_11: 1729650640584580967
+      sudokris-gray_12: -8815238201828156371
+      sudokris-gray_13: 5949824392108351917
+      sudokris-gray_2: -7281240399014240011
+      sudokris-gray_3: -1696734667029176552
+      sudokris-gray_4: -3325905812436079522
+      sudokris-gray_5: 5798871245439209497
+      sudokris-gray_6: -2888626753829598192
+      sudokris-gray_7: -1010590708372575452
+      sudokris-gray_8: 2240405265377599756
+      sudokris-gray_9: 1897466234626417881
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
