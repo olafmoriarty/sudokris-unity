@@ -10,6 +10,22 @@ public class BackgroundImage : MonoBehaviour
 	// Start is called once before the first execution of Update after the MonoBehaviour is created
 	void Start()
 	{
+		SetImageSize();
+	}
+
+	// Update is called once per frame
+	void Update()
+	{
+		float newY = transform.position.y + (Time.deltaTime * .5f);
+		if (newY >= imageHeightInUnits + mainCamera.transform.position.y)
+		{
+			newY -= imageHeightInUnits;
+		}
+		transform.position = new Vector3(transform.position.x, newY, transform.position.y);
+	}
+
+	public void SetImageSize()
+	{
 		// Screen aspect ratio
 		// Big thanks to https://discussions.unity.com/t/convert-screen-width-to-distance-in-world-space/832150
 		float aspectRatio = (float)Screen.width / Screen.height;
@@ -24,16 +40,6 @@ public class BackgroundImage : MonoBehaviour
 
 		sr.drawMode = SpriteDrawMode.Tiled;
 		sr.size = new Vector2(screenWidthInUnits, Mathf.Ceil(screenHeightInUnits) + 2 * imageHeightInUnits);
-	}
 
-	// Update is called once per frame
-	void Update()
-	{
-		float newY = transform.position.y + (Time.deltaTime * .5f);
-		if (newY >= imageHeightInUnits + mainCamera.transform.position.y)
-		{
-			newY -= imageHeightInUnits;
-		}
-		transform.position = new Vector3(transform.position.x, newY, transform.position.y);
 	}
 }

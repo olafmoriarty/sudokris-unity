@@ -12,14 +12,15 @@ public class SudokuBoard : MonoBehaviour
 	[SerializeField] Transform whiteSquare;
 	[SerializeField] Transform lineContainer;
 	[SerializeField] GameObject linePrefab;
-	public List<BlockStruct> blocksOnBoard;
+	[SerializeField] BackgroundImage bgImage;
+	public List<BlockStruct> blocksOnBoard = new List<BlockStruct> { };
 	public GameObject blockContainer;
 
 	void Start()
 	{
 		gm = GameManager.instance;
 		fallSpeed = gm.fallSpeed;
-		SetBoardSize(9);
+		SetBoardSize( boardSize );
 
 	}
 
@@ -37,6 +38,9 @@ public class SudokuBoard : MonoBehaviour
 		// Scale and position camera
 		mainCamera.orthographicSize = ((float)newSize + 6f) / 2f;
 		mainCamera.transform.position = new Vector3((float)newSize / 2f - 0.5f, ((float)newSize + 6f) / 2f - 0.5f, -10f);
+
+		// Scale background image to fit to image size
+		bgImage.SetImageSize();
 
 		// Remove any existing lines
 		foreach (Transform child in lineContainer)
@@ -74,11 +78,17 @@ public class SudokuBoard : MonoBehaviour
 		}
 	}
 
-	public void AnchorBlocks(Block[] blocks)
+	public void AnchorBlocks( BlockStruct[] blocks)
 	{
-		foreach (Block block in blocks)
+		foreach (BlockStruct b in blocks)
 		{
-			block.transform.parent = blockContainer.transform;
+			if (blocksOnBoard == null || b.block == null)
+			{
+				continue;
+			}
+			b.block.transform.parent = blockContainer.transform;
+			b.block.SetPosition( b.x, b.y, true );
+			blocksOnBoard.Add(b);
 		}
 	}
 }

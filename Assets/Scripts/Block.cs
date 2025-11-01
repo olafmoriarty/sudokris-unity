@@ -18,20 +18,18 @@ public struct BlockStruct
 
 	public BlockStruct(Block newBlock)
 	{
-		Vector2 coords = newBlock.GetCoords();
-		x = (int)coords.x;
-		y = (int)coords.y;
+		x = newBlock.x;
+		y = newBlock.y;
 		value = newBlock.value;
 		block = newBlock;
 	}
 }
 
-public class Block : MonoBehaviour
+public class Block : GridTransform
 {
 	private GameManager gm;
 	private TextMeshProUGUI text;
 	private SpriteRenderer spriteRenderer;
-	public GridTransform gt;
 	public int value;
 
 	// Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -40,7 +38,6 @@ public class Block : MonoBehaviour
 		gm = GameManager.instance;
 		text = GetComponentInChildren<TextMeshProUGUI>();
 		spriteRenderer = GetComponent<SpriteRenderer>();
-		gt = GetComponent<GridTransform>();
 	}
 
 	public void SetValue(int newValue)
@@ -50,8 +47,4 @@ public class Block : MonoBehaviour
 		text.text = gm.blockLabels[newValue];
 	}
 
-	public Vector2 GetCoords()
-	{
-		return new Vector2( gt.x, gt.y );
-	}
 }
