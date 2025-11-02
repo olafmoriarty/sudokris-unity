@@ -21,7 +21,6 @@ public class SudokuBoard : MonoBehaviour
 		gm = GameManager.instance;
 		fallSpeed = gm.fallSpeed;
 		SetBoardSize( boardSize );
-
 	}
 
 	public void SetBoardSize(int newSize)
@@ -89,6 +88,7 @@ public class SudokuBoard : MonoBehaviour
 			b.block.transform.parent = blockContainer.transform;
 			b.block.SetPosition( b.x, b.y, true );
 			blocksOnBoard.Add(b);
+			fallSpeed = Blockf.GetSpeed(gm.fallSpeed, blocksOnBoard.Count, boardSize);
 		}
 	}
 }

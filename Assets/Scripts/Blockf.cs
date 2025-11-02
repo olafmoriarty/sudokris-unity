@@ -43,7 +43,15 @@ public static class Blockf
 		return new Vector2(sectionWidth, sectionHeight);
 	}
 
-	public static BlockStruct[] MoveBlocks( BlockStruct[] blocks, int adjustX, int adjustY ) {
+	public static float GetSpeed(float baseSpeed, int blockCount, int squareSize )
+	{
+		float level = ( blockCount * 3f / Mathf.Pow(squareSize, 2f) ) + 1f;
+		float adjustedFallSpeed = baseSpeed * Mathf.Pow( 0.8f - ( (level - 1) * 0.007f ), level - 1);
+		return adjustedFallSpeed;	
+	}
+
+	public static BlockStruct[] MoveBlocks(BlockStruct[] blocks, int adjustX, int adjustY)
+	{
 		return blocks.Select(block =>
 		{
 			block.x += adjustX;
