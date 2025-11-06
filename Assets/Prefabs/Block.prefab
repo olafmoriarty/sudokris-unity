@@ -67,8 +67,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 9
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9012960a2b4376946b0d11096400a559, type: 2}
+  m_sharedMaterial: {fileID: -7596104214568064644, guid: 9012960a2b4376946b0d11096400a559, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -342,3 +342,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b566b4a37153ab4aa07cc9ad957a444, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Block
+  x: 0
+  y: 0
+  position: {x: 0, y: 0}
+  horizontalMoveSpeed: 12
+  value: 0
