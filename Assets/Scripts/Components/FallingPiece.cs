@@ -55,7 +55,7 @@ public class FallingPiece : GridTransform
 			else
 			{
 				// Move blocks to blocksOnBoard
-				board.AnchorBlocks( Blockf.MoveBlocks(shape, x, y) );
+				board.AnchorBlocks(Blockf.MoveBlocks(shape, x, y));
 
 				// Create new piece
 				CreatePiece();
@@ -78,7 +78,7 @@ public class FallingPiece : GridTransform
 
 	void CreatePiece()
 	{
-		SetPosition( (int)Mathf.Floor(board.boardSize / 2), board.boardSize + 5, true );
+		SetPosition( (int)Mathf.Floor(board.boardSize / 2), board.boardSize + 4, true );
 		foreach (Transform child in transform)
 		{
 			Destroy(child.gameObject);

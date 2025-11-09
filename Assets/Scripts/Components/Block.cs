@@ -1,12 +1,22 @@
+using System;
 using TMPro;
 using UnityEngine;
 
+[Serializable]
 public struct BlockStruct
 {
 	public int x;
 	public int y;
 	public int value;
 	public Block block;
+
+	public BlockStruct(int newX, int newY, int newValue, Block newBlock)
+	{
+		x = newX;
+		y = newY;
+		value = newValue;
+		block = newBlock;
+	}
 
 	public BlockStruct(int newX, int newY, int newValue)
 	{
