@@ -8,7 +8,9 @@ public class FallingPiece : GridTransform
 
 	public GameObject block;
 
+	[SerializeField] InputActionAsset inputActions;
 	private InputAction move;
+	private InputAction rotate;
 	private float previousMoveValue;
 	private float timeSincePreviousHorizontalMove = 0f;
 
@@ -22,7 +24,21 @@ public class FallingPiece : GridTransform
 		new BlockStruct( -1, 0, 2) ,
 	};
 
+	void OnEnable()
+	{
+		inputActions.FindActionMap("Block").Enable();
+	}
 
+	void OnDisable()
+	{
+		inputActions.FindActionMap("Block").Disable();
+	}
+
+	void Awake()
+	{
+		move = InputSystem.actions.FindAction("MoveBlock");
+		rotate = InputSystem.actions.FindAction("RotateClockwise");
+	}
 
 	// Start is called once before the first execution of Update after the MonoBehaviour is created
 	void Start()
@@ -30,7 +46,6 @@ public class FallingPiece : GridTransform
 		gm = GameManager.instance;
 		board = GetComponentInParent<SudokuBoard>();
 
-		move = InputSystem.actions.FindAction("Move");
 		timeSinceLastBlockFell = 0f;
 
 		CreatePiece();
@@ -51,6 +66,7 @@ public class FallingPiece : GridTransform
 			if (!Blockf.DoBlocksCollide(Blockf.MoveBlocks(shape, x, y - 1), board.blocksOnBoard, board.boardSize))
 			{
 				y -= 1;
+				//AudioManager.instance.PlaySound( AudioManager.SoundFX.Explosion );
 			}
 			else
 			{
@@ -63,16 +79,39 @@ public class FallingPiece : GridTransform
 			timeSinceLastBlockFell = 0f;
 		}
 
-		Vector2 moveValue = move.ReadValue<Vector2>();
+		int movement = (int)move.ReadValue<float>();
+		if (movement != 0)
+		{
+			AttemptHorizontalMove(movement);
+		}
+		if (rotate.WasPressedThisFrame())
+		{
+			AttemptRotation(1);
+		}
+	}
+
+	void AttemptHorizontalMove( int movement )
+	{
 		timeSincePreviousHorizontalMove += Time.deltaTime;
-		if (previousMoveValue != moveValue.x || timeSincePreviousHorizontalMove > moveSpeed * 0.1f) {
+		if (previousMoveValue != movement || timeSincePreviousHorizontalMove > moveSpeed * 0.1f) {
 			timeSincePreviousHorizontalMove = 0f;
-			previousMoveValue = moveValue.x;
+			previousMoveValue = movement;
 			// Will be replaced with an actual "does position collide" checker, but for now:
-			if ( !Blockf.DoBlocksCollide( Blockf.MoveBlocks( shape, x + (int)moveValue.x, y ), board.blocksOnBoard, board.boardSize ) )
+			if ( !Blockf.DoBlocksCollide( Blockf.MoveBlocks( shape, x + movement, y ), board.blocksOnBoard, board.boardSize ) )
 			{
-				x += (int)moveValue.x;
+				x += movement;
 			}
+		}
+	}
+
+	void AttemptRotation( int rotations = 1 )
+	{
+		AudioManager.instance.PlaySound(AudioManager.SoundFX.Explosion);
+		BlockStruct[] rotatedPiece = Blockf.RotatePiece(shape, rotations);
+		if (!Blockf.DoBlocksCollide(Blockf.MoveBlocks(rotatedPiece, x, y), board.blocksOnBoard, board.boardSize))
+		{
+			shape = rotatedPiece;
+			Blockf.PositionBlocks(rotatedPiece);			
 		}
 	}
 
